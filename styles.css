@@ -1,3 +1,8 @@
+:root {
+    --mavs-blue: #3B599D;
+    color: white;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,18 +10,35 @@
     font-family: Roboto, serif;
 }
 
+body {
+    background-color: var(--mavs-blue);
+}
+
 nav {
     background-color: black;
     height: 64px;
-    padding: 8px;
+    padding: 8px 4rem;
     display: flex;
+    justify-content: space-between;
     color: white;
     align-items: center;
-    gap: 2rem;
 }
 
 nav .logo {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
     height: 100%;
+}
+
+nav .logo img {
+    height: 100%;
+}
+
+nav .links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
 }
 
 .banner {
@@ -25,9 +47,43 @@ nav .logo {
     justify-content: center;
     align-items: center;
     height: 50vh;
-    border-bottom: 2px solid black;
+    border-bottom: 3px solid black;
 }
 
 .banner img {
     height: 100%;
+}
+
+.players {
+    background-color: var(--mavs-blue);
+    padding: 2rem 4rem;
+}
+
+.starting-lineup {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.player {
+    border: 2px solid black;
+    border-radius: 16px;
+    padding: 1rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.player:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.player img {
+    width: 250px;
 }
