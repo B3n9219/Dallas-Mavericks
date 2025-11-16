@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, serif;
+}
+
+nav {
+    background-color: black;
+    height: 64px;
+    padding: 8px;
+    display: flex;
+    color: white;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav .logo {
+    height: 100%;
+}
+
+.banner {
+    background-color: #6D6D6D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    border-bottom: 2px solid black;
+}
+
+.banner img {
+    height: 100%;
+}
